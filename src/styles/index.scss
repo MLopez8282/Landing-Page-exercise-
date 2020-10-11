@@ -1,6 +1,29 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+#navbar{
+    height:10%;
+}
+#jumbotron{
+    height:20%;
+
+}
+#cards {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:60%;
+    width:20%;
+    padding:2px;
+
+}
+#footer{
+    height:10%
+}
+
+
+
 /* 
+
 
     You can write your own styles here...
     
