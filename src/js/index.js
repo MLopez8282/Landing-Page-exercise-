@@ -43,8 +43,8 @@ ReactDOM.render(<Navbar />, document.querySelector("#navbar"))
 
 
 /* START JUMBOTRON*/
-const welcome = {
-    display: "Twins go together like Tequila and Bad decisions",
+const tagline = {
+    title: "Twins go together like Tequila and Bad decisions",
     text: "bhaoifjaisofjnvksdskdghsghsghioasghsdjvhjkdsfkdfsdgf",
     button: {
         url: "https://www.pinterest.com/pin/36169603245140064/",
@@ -54,10 +54,10 @@ const welcome = {
 };
 
 const jumbotron = (
-    <div className="jumbotron">
-        <h1 className="display-4">{welcome.display}</h1>
-        <p className="lead">{welcome.text}.</p>
-        <a className="btn btn-primary btn-lg" href={welcome.button.url} role="button">{welcome.button.label}</a>
+    <div className="#jumbotron">
+        <h1 className="title">{tagline.title}</h1>
+        <p className="text">{tagline.text}.</p>
+        <a className="button btn btn-primary btn-lg" href={tagline.button.url} role="button">{tagline.button.label}</a>
     </div>
 );
 
@@ -68,16 +68,98 @@ ReactDOM.render(<jumbotron />, document.querySelector("#jumbotron"));
 /*START CARD */
 const BootstrapCard = props => {
     return (
-        <div className="card" style="width: 18rem;">
-            <img className="card-img-top" src={props.imageUrl} alt="Card image cap">
-                <div className="card-body">
-                    <h5 className="card-title">{props.title}</h5>
-                    <p className="card-text">{props.text}.</p>
-                    <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
-                </div>
+        <div className="#cards" style="width: 18rem;">
+            <div className="#card1"></div>
+            <img className="cardImage1" src={props.imageUrl} alt="Card image cap"></img>
+            <h2 className="cardTitle1">{props.title}</h5>
+            <p className="cardText1">{props.text}</p>
+            <a href={props.buttonUrl} className="cardButton1 btn btn-primary">{props.buttonLabel}</a>
         </div>
-);
+        
+BootstrapCard.PropTypes = {
+        title: PropType.string,
+        imageUrl: PropType.string,
+        text: PropType.string,
+        buttonUrl: Proptype.string,
+        buttonLabel: Proptype.string
+    };
+
+    ReactDOM.render(
+        <BootstrapCard
+            title="Ollie"
+            imageUrl="http://www.google.com"
+            text="bla bla bla"
+            buttonUrl="http://www.google.com"
+            buttonLabel="press here"
+        />,
+        document.querySelector("#card1")
+    );
 };
+
+<div class="card2">
+    <img class="cardImage2" href={props.imageUrl} src="" height="325" width="500">
+        <h2 class="cardTitle2">{props.title}</h2>
+        <p class="cardText2">{props.text} </p>
+        <a href={props.buttonUrl} className="cardButton2 btn btn-primary">{props.buttonLabel}</a>
+         </div>
+
+         BootstrapCard.PropTypes = {
+        title: PropType.string,
+                imageUrl: PropType.string,
+                text: PropType.string,
+                buttonUrl: Proptype.string,
+                buttonLabel: Proptype.string
+};
+
+         ReactDOM.render(
+            <BootstrapCard
+        title="mylo"
+        imageUrl="http://www.google.com"
+        text="bla blajsdkfdskfha"
+        buttonUrl="http://www.google.com"
+        buttonLabel="click here"
+    />,
+        document.querySelector("#card2")
+        );
+
+
+        <div className="#card3">
+        <img class="cardImage3" href={props.imageUrl} src="" height="325" width="500">
+            <h2 class="cardTitle3">{props.title}</h2>
+            <p class="cardText3">{props.text} </p>
+            <a href={props.buttonUrl} className="cardButton3 btn btn-primary">{props.buttonLabel}</a>
+         </div>
+
+
+        BootstrapCard.PropTypes = {
+            title: PropType.string,
+                imageUrl: PropType.string,
+                text: PropType.string,
+                buttonUrl: Proptype.string,
+                buttonLabel: Proptype.string
+};
+
+ReactDOM.render(
+            <BootstrapCard
+            title="frankie"
+            imageUrl="http://www.google.com"
+            text="bla ljkjkj blajsdkfdskfha"
+            buttonUrl="http://www.google.com"
+            buttonLabel="press here"
+        />,
+        document.querySelector("#card3")
+        );
+        };
+
+
+               <div className="#card4">
+            <img class="cardImage4" href={props.imageUrl} src="" height="325" width="500">
+                <h2 class="cardTitle4">{props.title}</h2>
+                <p class="cardText4">{props.text} </p>
+                <a href={props.buttonUrl} className="cardButton4 btn btn-primary">{props.buttonLabel}</a>
+         </div>
+
+
 BootstrapCard.PropTypes = {
                 title: PropType.string,
                 imageUrl: PropType.string,
@@ -85,38 +167,6 @@ BootstrapCard.PropTypes = {
                 buttonUrl: Proptype.string,
                 buttonLabel: Proptype.string
 };
-
- ReactDOM.render(
-            <BootstrapCard
-                title="Ollie"
-                imageUrl="http://www.google.com"
-                text="bla bla bla"
-                buttonUrl="http://www.google.com"
-                buttonLabel="press here"
-            />,
-        document.querySelector("#card1")
-        );
- ReactDOM.render(
-            <BootstrapCard
-                title="mylo"
-                imageUrl="http://www.google.com"
-                text="bla blajsdkfdskfha"
-                buttonUrl="http://www.google.com"
-                buttonLabel="click here"
-            />,
-        document.querySelector("#card2")
-        );
-
- ReactDOM.render(
-            <BootstrapCard
-                title="frankie"
-                imageUrl="http://www.google.com"
-                text="bla ljkjkj blajsdkfdskfha"
-                buttonUrl="http://www.google.com"
-                buttonLabel="press here"
-            />,
-        document.querySelector("#card3")
-        );
 
  ReactDOM.render(
             <BootstrapCard
@@ -129,6 +179,9 @@ BootstrapCard.PropTypes = {
         document.querySelector("#card4")
         );
         </div>
+    </div>
+        
+    );
 /*END CARD */
 
 
