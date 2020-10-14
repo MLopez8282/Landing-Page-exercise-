@@ -20,7 +20,7 @@ export const Jumbotron = () => {
 						<h1 className="title">{tagline.title}</h1>
 						<p className="text">{tagline.text}</p>
 						<a
-							className="button jumbotron-button btn mt-4 btn-lg bg-secondary text-white"
+							className="button jumbotron-button btn mt-4 btn-lg bg-dark text-white"
 							href={tagline.button.url}
 							role="button">
 							{tagline.button.label}

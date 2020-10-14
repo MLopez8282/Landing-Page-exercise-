@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-dark mynavbar ">
+		<nav className="navbar navbar-expand-lg navbar-light bg-secondary mynavbar">
 			<a className=" navbar-brand colortext pl-5 ml-5" href="#">
 				Start Bootstrap
 			</a>

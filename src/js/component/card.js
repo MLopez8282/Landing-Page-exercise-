@@ -5,7 +5,7 @@ export const BootstrapCard = props => {
 	return (
 		<div className="col-3 mb-5 ">
 			<div
-				className="cards d-flex align-items-center flex-column border border-dark mb-5"
+				className="cards d-flex align-items-center flex-column border border-dark mb-5 bg-white"
 				style={{ width: "220px;" }}>
 				<div className="card1" />
 				<img
