@@ -5,7 +5,7 @@ export const BootstrapCard = props => {
 	return (
 		<div className="col-3 mb-5  ">
 			<div
-				className="cards d-flex align-items-center flex-column border border-dark mb-5 bg-white "
+				className="cards d-flex align-items-center flex-column border border-black border-top-0 mb-5 text-white "
 				style={{ width: "220px;" }}>
 				<div className="card1" />
 				<img
@@ -18,7 +18,8 @@ export const BootstrapCard = props => {
 
 				<a
 					href={props.buttonUrl}
-					className="cardButton1 btn btn-dark text-dark bg-light mb-4 mt-2">
+					target="_blank"
+					className="cardButton1 btn btn-dark text-dark bg-white mb-4 mt-2">
 					{props.buttonLabel}
 				</a>
 			</div>

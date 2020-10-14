@@ -25,24 +25,27 @@
 }
 
 .mynavbar{
-    height:10%;
+    height:8%
     
 }
 .jumbotron{
+
     height:300px;
     width:99%;
-background-color:white;
+background-color:black;
 
-    background-image: url("https://cdn.pixabay.com/photo/2019/12/20/13/21/dinosaur-4708418_1280.png" );
+
+   background-image:url("https://cdn.pixabay.com/photo/2019/12/20/13/21/dinosaur-4708418_1280.png");
     background-size: 500px 420px;
     background-repeat:no-repeat;
     background-position: right bottom;
-     box-shadow :15px 15px 30px 0 black inset;
+    
     
 
 }
 .cards{
-    box-shadow: 0px 30px 30px 0px black inset;
+    
+    background-color:black;
     
     
 

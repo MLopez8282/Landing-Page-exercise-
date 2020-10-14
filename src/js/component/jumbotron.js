@@ -23,7 +23,7 @@ export const Jumbotron = () => {
 		<div className="container mt-5  pr-2">
 			<div className="row">
 				<div className="col-12  m-auto  ">
-					<div className="jumbotron pt-4">
+					<div className="jumbotron text-white pt-4">
 						<h1 className="title ">{tagline.title}</h1>
 						<p className="text  ">
 							{tagline.text}
@@ -37,8 +37,9 @@ export const Jumbotron = () => {
 							{tagline.text5}
 						</p>
 						<a
-							className="button jumbotron-button btn mt-3 btn-lg bg-dark text-white"
+							className="button jumbotron-button btn mt-3 btn-lg bg-white text-dark"
 							href={tagline.button.url}
+							target="_blank"
 							role="button">
 							{tagline.button.label}
 						</a>

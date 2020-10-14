@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-secondary mynavbar">
+		<nav className="navbar navbar-expand-lg navbar bg-secondary mynavbar">
 			<a className=" navbar-brand colortext pl-5 ml-5" href="#">
 				Start Bootstrap
 			</a>
@@ -17,10 +17,10 @@ export const Navbar = () => {
 				<span className="navbar-toggler-icon" />
 			</button>
 			<div
-				className="collapse navbar-collapse d-flex justify-content-end mr-5 pr-5"
+				className="collapse navbar-collapse d-flex justify-content-end mr-5 pr-5 "
 				id="navbarNavAltMarkup">
 				<div className="navbar-nav ">
-					<a className="nav-item nav-link active colortext" href="#">
+					<a className="nav-item nav-link colortext active" href="#">
 						Home <span className="sr-only">(current)</span>
 					</a>
 					<a className="nav-item nav-link colortext" href="#">
