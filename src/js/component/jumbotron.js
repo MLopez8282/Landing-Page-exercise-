@@ -37,7 +37,7 @@ export const Jumbotron = () => {
 							{tagline.text5}
 						</p>
 						<a
-							className="button jumbotron-button btn mt-3 btn-lg bg-white text-dark"
+							className="button jumbotron-button btn mt-3 btn-lg bg-white text-dark font-weight-bold"
 							href={tagline.button.url}
 							target="_blank"
 							role="button">
