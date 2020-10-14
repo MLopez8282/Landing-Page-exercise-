@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 export const BootstrapCard = props => {
 	return (
-		<div className="col-3">
+		<div className="col-3 mb-5 ">
 			<div
-				className="cards d-flex align-items-center flex-column border border-dark"
+				className="cards d-flex align-items-center flex-column border border-dark mb-5"
 				style={{ width: "220px;" }}>
 				<div className="card1" />
 				<img
@@ -13,17 +13,14 @@ export const BootstrapCard = props => {
 					src={props.imageUrl}
 					alt="Card image cap"
 				/>
-				<h2 className="cardTitle1 ">{props.title}</h2>
-				<p className="cardText1">{props.text}</p>
+				<h5 className="cardTitle1 pt-1 ">{props.title}</h5>
+				<p className="cardText1 p-2">{props.text}</p>
 
-				<hr className="hr" />
-				<footer className="hr-footer d-flex justify-content-center">
-					<a
-						href={props.buttonUrl}
-						className="cardButton1 btn btn-primary">
-						{props.buttonLabel}
-					</a>
-				</footer>
+				<a
+					href={props.buttonUrl}
+					className="cardButton1 btn btn-dark text-dark bg-light mb-4 mt-2">
+					{props.buttonLabel}
+				</a>
 			</div>
 		</div>
 	);
