@@ -16,7 +16,7 @@ export const Jumbotron = () => {
 		<div className="container mt-1 mb-1 p-1">
 			<div className="row">
 				<div className="col-12  m-auto">
-					<div className="jumbotron mb-0">
+					<div className="jumbotron mb-0 ml-2">
 						<h1 className="title">{tagline.title}</h1>
 						<p className="text">{tagline.text}</p>
 						<a
