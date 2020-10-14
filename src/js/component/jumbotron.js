@@ -20,7 +20,7 @@ const tagline = {
 
 export const Jumbotron = () => {
 	return (
-		<div className="container mt-1 mb-1 p-1">
+		<div className="container mt-5  pr-2">
 			<div className="row">
 				<div className="col-12  m-auto  ">
 					<div className="jumbotron pt-4">
