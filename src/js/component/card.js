@@ -18,7 +18,6 @@ export const BootstrapCard = props => {
 
 				<a
 					href={props.buttonUrl}
-				
 					className="cardButton1 btn btn-dark text-white bg-secondary mb-4 mt-2">
 					{props.buttonLabel}
 				</a>
